@@ -1,0 +1,406 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    font-family: 'Source Code Pro', monospace;
+    box-sizing: border-box;
+}
+
+/* SECCION DE NAVEGADOR */
+
+
+.contenedor-nav {
+    width: 100%;
+    height: 24vh;
+    background-color: #3e606f;
+}
+
+.logo img {
+    height: 5%;
+    width: 5%;
+    display: block;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 50rem;
+    margin: auto;
+    font-size: 1.2rem;
+    height: 100%;
+  }
+
+  a{
+    color: white;
+    font-weight: bold;
+    margin-right: 2em;
+  }
+
+  a:hover {
+    color: red;
+  }
+
+  .btn {
+    width: 20%;
+    height: 8%;
+    border-radius: 15%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+  }
+
+
+
+/* SECCION DE BIENVENIDA */
+
+
+
+  .banner {
+    width: 100%;
+    height: 35vh;
+    background-image: url(./img/banner-inicio.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bienvenida {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.8rem;
+    height: 100%;
+  }
+
+  .bienvenida h1 {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    max-width: 28rem;
+    width: 100%;
+    padding: 45px 0;
+    text-align: center;
+  }
+
+  .bienvenida p {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+
+
+/* SECCION DE VIAJES */
+
+
+
+  .viajes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF7BD;
+  }
+
+  .introduccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.22);
+    max-width: 25rem;
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .contenedor-lugares {
+    width: 100%;
+    display: flex;
+  }
+
+  .lugares {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .lugares img {
+    width: 350px;
+    height: 300px;
+    padding: 2rem;
+    border-radius: 15%;
+  }
+
+  .lugares h4 {
+    font-size: 1.7rem;
+  }
+
+  .lugares p {
+    font-size: 1.2rem;
+    max-width: 20rem;
+    text-align: center;
+  }
+
+
+
+/* SECCION DE CONTACTO */
+
+
+
+  .contenedor-contacto {
+    height: 25vh;
+    width: 100%;
+    background-color: #FFF7BD;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 8rem;
+    width: 100%;
+  }
+
+  .contacto h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .input-1 {
+    max-width: 17rem;
+  }
+
+  .dialogo {
+    max-width: 60rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-contacto {
+    width: 15%;
+    height: 20%;
+    border-radius: 15%;
+    margin-right: 25rem;
+    margin-top: 9rem;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .btn-contacto:hover {
+    cursor: pointer;
+  }
+
+
+
+/* SECCION DE FOOTER */
+
+
+
+  .footer {
+    height: 20vh;
+    width: 100%;
+    background-color: #3e606f;
+    color: white;
+  }
+
+  .footer h4 {
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+  }
+
+  .lista-paises {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 3rem;
+    padding-left: 3rem;
+    list-style: none;
+  }
+
+
+/* MEDIA QUERIES */
+
+@media (min-width:2000px) {
+    .btn-contacto {
+        margin-right: 50rem;
+        margin-top: 12rem;
+    }
+
+    .contacto {
+        padding-left: 30rem;
+    }
+
+}
+
+@media (min-width:1020px) and (max-width:1999px){
+    .contenedor-lugares {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lugares img {
+      width: 500px;
+      height: 450px;
+    }
+
+    .introduccion {
+      margin-left: 3.5rem;
+    }
+
+    .logo img {
+        height: 8%;
+        width: 8%;
+    }
+
+    .menu {
+        font-size: 0.9rem;
+    }
+
+    .contenedor-nav {
+        height: 30vh;
+    }
+
+    .lista-paises {
+        max-width: 85%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn-contacto {
+      margin-top: 6.4rem;
+    }
+    
+}
+
+@media (min-width:767px) and (max-width:1019px) {
+    .contenedor-lugares {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 10%;
+        width: 10%;
+    }
+
+    .contenedor-nav {
+      height: 24vh;
+    }
+
+    .menu {
+        font-size: 0.8rem;
+        height: 50%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .lista-paises {
+        height: 70%;
+        font-size: 0.7rem;
+        margin-top: 2rem;
+    }
+
+    li {
+        margin-right: 1rem;
+    }
+
+    .btn-contacto {
+      margin-top: 6.4rem;
+    }
+}
+
+
+@media (max-width:766px) {
+    .contenedor-lugares {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 15%;
+        width: 15%;
+    }
+
+    .contenedor-nav {
+        height: 24vh;
+    }
+
+    .menu {
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+
+    .btn {
+        width: 10rem;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .introduccion {
+        margin-left: 0.2rem;
+    }
+
+    .lugares img {
+        width: 280px;
+        height: 240px;
+    }
+
+    .contacto {
+        padding-left: 2rem;
+    }
+
+    .btn-contacto {
+        margin-left: 2.0rem;
+        margin-top: 6.4rem;
+        width: 20%;
+    }
+
+    .footer h4 {
+        font-size: 1.0rem;
+        padding-top: 0.8rem;
+    }
+
+    .lista-paises {
+        flex-direction: column;
+        margin-top: 0.2rem;
+    }
+
+    li {
+        margin-right: 1rem;
+        font-size: 0.8rem;
+    }
+}

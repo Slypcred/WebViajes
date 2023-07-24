@@ -1,0 +1,132 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Cinzel', serif;
+    font-family: 'Source Code Pro', monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF7BD;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    margin: 10rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recuadro-login {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    text-align: left;
+    background-color: #3e606f;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0px 0px 26px -5px rgba(0,0,0,0.62);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.container-form {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    margin: auto;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-input {
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+label {
+    color: white;
+    margin-top: 0.4rem;
+    width: 20%;
+}
+
+input {
+    width: 80%;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    padding: 0 20px;
+}
+
+button {
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    height: 45px;
+    width: 30%;
+    border-radius: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 1001px) and (max-width: 1400px) {
+    label {
+        width: 30%
+    }
+
+    button {
+        width: 40%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    label {
+        width: 40%;
+    }
+
+    button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .container-input {
+        flex-direction: column;
+    }
+
+    button {
+        width: 80%;
+    }
+}
